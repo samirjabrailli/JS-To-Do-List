@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toDo {
+    width: 100%;
+    height: 477px;
+    background-color: gray;
+    text-align: center;
+    overflow: scroll;
+   
+}
+
+.toDo h2 {
+    color: rgba(255, 255, 255, 0.52);
+    padding: 10px;
+    font-size: 30px;
+}
+
+.display {
+    background-color: rgba(17, 17, 164, 0.544);
+    width: 85%;
+    margin: 10px;
+    border: 1px solid #666;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.display input {
+
+    outline: none;
+}
+
+.display button {
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 7px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.List li {
+    margin: 10px;
+    width: 85%;
+    list-style: none;
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #666;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 30px;
+}
+
+li button {
+    font-size: 1.1em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 7px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li div {
+    font-size: 1.3em;
+}
+
+@media screen and (max-width: 600px) {
+    .toDo {
+        width: 100%;
+        height: 477px;
+        background-color: rgba(17, 17, 164, 0.544);
+        
+    }
+
+    .toDo h2 {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .display {
+        background-color: grey;
+        margin: 10px;
+        border: 1px solid white;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display input {
+       
+        
+        outline: none;
+    }
+    
+    .display button {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 5px 7px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .List li {
+        margin: 10px;
+        width: 85%;
+        list-style: none;
+        background-color: darkgreen;
+        color: grey;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        transition: all 1s;
+        border: 1px solid white;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 30px;
+    }
+
+    .List li:hover{
+        color: white;
+    }
+    
+    li button {
+        font-size: 1.1em;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 5px 7px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    li div {
+        font-size: 1.3em;
+    }
+    
+}
